@@ -15,11 +15,8 @@ header a {
   font-weight: bold;
   text-decoration: none;
 }*/
-.site-container {
-  min-height: 100vh;
-}
 main {
-  flex: 1;
+  padding: 1rem;
 }
 .products {
   display: flex;
@@ -34,7 +31,7 @@ main {
 
 .product img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .product-info {
