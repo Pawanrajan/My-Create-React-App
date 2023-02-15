@@ -14,7 +14,7 @@ function App() {
           <Navbar bg="dark" variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Shop Now</Navbar.Brand>
+                <Navbar.Brand>amazon</Navbar.Brand>
               </LinkContainer>
             </Container>
           </Navbar>

@@ -8,7 +8,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Rating from '../components/Rating';
-import { Helmet } from 'react-helmet-async';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -62,9 +61,9 @@ function ProductScreen() {
         <Col md={3}>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <Helmet>
+              <h1>
                 <title>{product.name}</title>
-              </Helmet>
+              </h1>
               <h1>{product.name}</h1>
             </ListGroup.Item>
             <ListGroup.Item>
