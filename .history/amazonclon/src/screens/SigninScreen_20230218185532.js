@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet-async';
 import { useContext, useEffect, useState } from 'react';
 import { Store } from '../Store';
 import { toast } from 'react-toastify';
-import { getError } from '../util';
 export default function SigninScreen() {
   const navigate = useNavigate();
   const { search } = useLocation();
