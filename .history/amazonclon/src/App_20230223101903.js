@@ -24,7 +24,6 @@ function App() {
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
-    localStorage.removeItem('shippingAddress');
   };
   return (
     <BrowserRouter>
