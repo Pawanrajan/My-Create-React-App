@@ -8,10 +8,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { toast } from 'react-toastify';
-import { getError } from '../util';
+import { getError } from '../utils';
 import { Store } from '../Store';
 import CheckoutSteps from '../components/CheckoutSteps';
-import LoadingBox from '../components/LoadingBox';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -31,6 +30,7 @@ export default function PlaceOrderScreen() {
 
   const [{ loading }, dispatch] = useReducer(reducer, {
     loading: false,
+    error: '',
   });
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -183,7 +183,6 @@ export default function PlaceOrderScreen() {
                       Place Order
                     </Button>
                   </div>
-                  {loading && <LoadingBox></LoadingBox>}
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
